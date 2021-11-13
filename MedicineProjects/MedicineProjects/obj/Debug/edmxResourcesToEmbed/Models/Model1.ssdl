@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MedicineSalesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="int" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Medicine">
+    <Key>
+      <PropertyRef Name="MedicineId" />
+    </Key>
+    <Property Name="MedicineId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineName" Type="varchar" MaxLength="50" />
+    <Property Name="MedicineCategoryId" Type="int" />
+    <Property Name="SalePrice" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedicinePurchase">
+    <Key>
+      <PropertyRef Name="MedicinePurchaseId" />
+    </Key>
+    <Property Name="MedicinePurchaseId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineId" Type="int" />
+    <Property Name="MedicineSupplierId" Type="int" />
+    <Property Name="SalePointID" Type="int" />
+    <Property Name="PurchaseDate" Type="date" />
+    <Property Name="ExpireDate" Type="varchar" MaxLength="50" />
+    <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="Vat" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="GrandTotalPrice" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="MedicineStockStatus" Type="varchar" MaxLength="50" />
+    <Property Name="MemoNo" Type="int" />
+    <Property Name="Comments" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedicineSale">
+    <Key>
+      <PropertyRef Name="MedicineSaleId" />
+    </Key>
+    <Property Name="MedicineSaleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineId" Type="int" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="SalePointID" Type="int" />
+    <Property Name="SaleDate" Type="date" />
+    <Property Name="ExpireDate" Type="varchar" MaxLength="50" />
+    <Property Name="Rate" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Vat" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Discount" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="NetTotalPrice" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MedicineStockStatus" Type="varchar" MaxLength="50" />
+    <Property Name="MemoNo" Type="int" />
+    <Property Name="Comments" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedicineStock">
+    <Key>
+      <PropertyRef Name="MedicineStockId" />
+    </Key>
+    <Property Name="MedicineStockId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineId" Type="int" />
+    <Property Name="SalePointID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedicineSupplier">
+    <Key>
+      <PropertyRef Name="MedicineSupplierId" />
+    </Key>
+    <Property Name="MedicineSupplierId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineSupplierName" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="int" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="ManagerName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblMedicineCategory">
+    <Key>
+      <PropertyRef Name="MedicineCategoryId" />
+    </Key>
+    <Property Name="MedicineCategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MedicineCategoryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblSalePoint">
+    <Key>
+      <PropertyRef Name="SalePointID" />
+    </Key>
+    <Property Name="SalePointID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalePointNo" Type="int" />
+    <Property Name="SalePointName" Type="varchar" MaxLength="50" />
+    <Property Name="SalePointManager" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="UserPass" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblUserRole">
+    <Key>
+      <PropertyRef Name="UserRoleID" />
+    </Key>
+    <Property Name="UserRoleID" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="PageName" Type="varchar" MaxLength="50" />
+    <Property Name="IsCreate" Type="bit" />
+    <Property Name="IsRead" Type="bit" />
+    <Property Name="IsUpdate" Type="bit" />
+    <Property Name="IsDelete" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Medicine_TblMedicineCategory">
+    <End Role="TblMedicineCategory" Type="Self.TblMedicineCategory" Multiplicity="0..1" />
+    <End Role="Medicine" Type="Self.Medicine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblMedicineCategory">
+        <PropertyRef Name="MedicineCategoryId" />
+      </Principal>
+      <Dependent Role="Medicine">
+        <PropertyRef Name="MedicineCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicinePurchase_Medicine">
+    <End Role="Medicine" Type="Self.Medicine" Multiplicity="0..1" />
+    <End Role="MedicinePurchase" Type="Self.MedicinePurchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicine">
+        <PropertyRef Name="MedicineId" />
+      </Principal>
+      <Dependent Role="MedicinePurchase">
+        <PropertyRef Name="MedicineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicinePurchase_MedicineSupplier">
+    <End Role="MedicineSupplier" Type="Self.MedicineSupplier" Multiplicity="0..1" />
+    <End Role="MedicinePurchase" Type="Self.MedicinePurchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MedicineSupplier">
+        <PropertyRef Name="MedicineSupplierId" />
+      </Principal>
+      <Dependent Role="MedicinePurchase">
+        <PropertyRef Name="MedicineSupplierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicinePurchase_TblSalePoint">
+    <End Role="TblSalePoint" Type="Self.TblSalePoint" Multiplicity="0..1" />
+    <End Role="MedicinePurchase" Type="Self.MedicinePurchase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblSalePoint">
+        <PropertyRef Name="SalePointID" />
+      </Principal>
+      <Dependent Role="MedicinePurchase">
+        <PropertyRef Name="SalePointID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicineSale_Customer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="MedicineSale" Type="Self.MedicineSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="MedicineSale">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicineSale_Medicine">
+    <End Role="Medicine" Type="Self.Medicine" Multiplicity="0..1" />
+    <End Role="MedicineSale" Type="Self.MedicineSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicine">
+        <PropertyRef Name="MedicineId" />
+      </Principal>
+      <Dependent Role="MedicineSale">
+        <PropertyRef Name="MedicineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicineSale_TblSalePoint">
+    <End Role="TblSalePoint" Type="Self.TblSalePoint" Multiplicity="0..1" />
+    <End Role="MedicineSale" Type="Self.MedicineSale" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblSalePoint">
+        <PropertyRef Name="SalePointID" />
+      </Principal>
+      <Dependent Role="MedicineSale">
+        <PropertyRef Name="SalePointID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicineStock_Medicine">
+    <End Role="Medicine" Type="Self.Medicine" Multiplicity="0..1" />
+    <End Role="MedicineStock" Type="Self.MedicineStock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medicine">
+        <PropertyRef Name="MedicineId" />
+      </Principal>
+      <Dependent Role="MedicineStock">
+        <PropertyRef Name="MedicineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MedicineStock_TblSalePoint">
+    <End Role="TblSalePoint" Type="Self.TblSalePoint" Multiplicity="0..1" />
+    <End Role="MedicineStock" Type="Self.MedicineStock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblSalePoint">
+        <PropertyRef Name="SalePointID" />
+      </Principal>
+      <Dependent Role="MedicineStock">
+        <PropertyRef Name="SalePointID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblUserRole_TblUser">
+    <End Role="TblUser" Type="Self.TblUser" Multiplicity="0..1" />
+    <End Role="TblUserRole" Type="Self.TblUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblUser">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="TblUserRole">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MedicineSalesModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Medicine" EntityType="Self.Medicine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicinePurchase" EntityType="Self.MedicinePurchase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicineSale" EntityType="Self.MedicineSale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicineStock" EntityType="Self.MedicineStock" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedicineSupplier" EntityType="Self.MedicineSupplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblMedicineCategory" EntityType="Self.TblMedicineCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSalePoint" EntityType="Self.TblSalePoint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUser" EntityType="Self.TblUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblUserRole" EntityType="Self.TblUserRole" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Medicine_TblMedicineCategory" Association="Self.FK_Medicine_TblMedicineCategory">
+      <End Role="TblMedicineCategory" EntitySet="TblMedicineCategory" />
+      <End Role="Medicine" EntitySet="Medicine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicinePurchase_Medicine" Association="Self.FK_MedicinePurchase_Medicine">
+      <End Role="Medicine" EntitySet="Medicine" />
+      <End Role="MedicinePurchase" EntitySet="MedicinePurchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicinePurchase_MedicineSupplier" Association="Self.FK_MedicinePurchase_MedicineSupplier">
+      <End Role="MedicineSupplier" EntitySet="MedicineSupplier" />
+      <End Role="MedicinePurchase" EntitySet="MedicinePurchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicinePurchase_TblSalePoint" Association="Self.FK_MedicinePurchase_TblSalePoint">
+      <End Role="TblSalePoint" EntitySet="TblSalePoint" />
+      <End Role="MedicinePurchase" EntitySet="MedicinePurchase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicineSale_Customer" Association="Self.FK_MedicineSale_Customer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="MedicineSale" EntitySet="MedicineSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicineSale_Medicine" Association="Self.FK_MedicineSale_Medicine">
+      <End Role="Medicine" EntitySet="Medicine" />
+      <End Role="MedicineSale" EntitySet="MedicineSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicineSale_TblSalePoint" Association="Self.FK_MedicineSale_TblSalePoint">
+      <End Role="TblSalePoint" EntitySet="TblSalePoint" />
+      <End Role="MedicineSale" EntitySet="MedicineSale" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicineStock_Medicine" Association="Self.FK_MedicineStock_Medicine">
+      <End Role="Medicine" EntitySet="Medicine" />
+      <End Role="MedicineStock" EntitySet="MedicineStock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MedicineStock_TblSalePoint" Association="Self.FK_MedicineStock_TblSalePoint">
+      <End Role="TblSalePoint" EntitySet="TblSalePoint" />
+      <End Role="MedicineStock" EntitySet="MedicineStock" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblUserRole_TblUser" Association="Self.FK_TblUserRole_TblUser">
+      <End Role="TblUser" EntitySet="TblUser" />
+      <End Role="TblUserRole" EntitySet="TblUserRole" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

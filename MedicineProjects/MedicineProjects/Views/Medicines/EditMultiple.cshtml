@@ -1,0 +1,74 @@
+﻿@model MedicineProjects.ViewModel.VmCategoryWiseMedicine
+@{
+    ViewBag.Title = "EditMultiple";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Medicine</h2>
+<div>
+    @Html.ActionLink("Back to List", "Index", new { }, new { @class = "btn btn-info" })
+</div>
+<br />
+
+@using (Html.BeginForm("EditMultiple", "Medicines", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            Category
+            <select id="MedicineCategoryId" name="MedicineCategoryId" required class="dropdown-trigger btn">
+                @foreach (var item in Model.CategoryList)
+                {
+                    var Selected = item.categoryID == Model.categoryID ? "selected" : "";
+                    <option value="@item.categoryID" @Selected>@item.categoryName</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <div id="ProData" class="Table">
+                <div id="RowData" class="Row">
+                    <input type="hidden" name="MedicineId" />
+                    <input type="text" name="MedicineName" placeholder="MedicineName" /><br /><br />
+                    <input type="text" name="Status" placeholder="Status" /><br /><br />
+                    <input type="text" name="SalePrice" placeholder="SalePrice" /><br /><br />
+
+                    <input type="file" name="imgFile" placeholder="imgFile" />
+                    <a id="addRow" href="#" class="btn btn-xs btn-success"><i>+</i></a><hr />
+                </div>
+                @foreach (var item in Model.MedicineList)
+                {
+                    //var ExpireDate = item.ExpireDate == null ? "" : Convert.ToDateTime(item.ExpireDate).ToString("yyyy-MM-dd");
+                    <div id="RowData" class="Row">
+                        <input type="hidden" name="MedicineId" value="@item.MedicineId" />
+                        <input type="text" name="MedicineName" placeholder="MedicineName" value="@item.MedicineName" /><br /><br />
+                        <input type="text" name="Status" placeholder="Status" value="@item.Status" /><br /><br />
+                        <input type="text" name="SalePrice" placeholder="SalePrice" value="@item.SalePrice" /><br /><br />
+                        <input type="file" name="imgFile" placeholder="imgFile" /><br />
+                        <a id="deleteRow" href="#" class="btn btn-xs btn-danger"><i>-</i></a>
+                        <img src="@item.ImagePath" style="width:150px" />
+                        <hr />
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update" class="btn btn-success btn-lg">
+            </div>
+        </div>
+    </div>
+}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+
+    $('#addRow').on('click', function () {
+        $('#ProData').append('<div id="RowData" class="Row"> <input type="text" name="MedicineName" placeholder="MedicineName" /> <input type="text" name="Status" placeholder="Status" /><br><br> <input type="text" name="SalePrice" placeholder="SalePrice" /><br><br><input type="file" name="imgFile" placeholder="imgFile" /><a id="deleteRow" href="#" class="btn btn-xs btn-danger"><i>-</i></a><hr /></div>');
+        $('#ProData').addClass();
+        return false;
+    });
+    $('#ProData').on('click', '#deleteRow', function () {
+        $(this).parent().remove();
+        return false;
+    });
+</script>

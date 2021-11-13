@@ -1,0 +1,34 @@
+﻿@model MedicineProjects.Models.TblMedicineCategory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listTblUserRole = (List<MedicineProjects.Models.TblUserRole>)Session["TblUserRoles"];
+}
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TblMedicineCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicineCategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicineCategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@if (listTblUserRole.Where(o => o.PageName == "MedicineCategories" && o.IsUpdate == true).FirstOrDefault() != null)*@
+    @if (listTblUserRole.Where(o => o.PageName == "MedicineCategories" && o.IsUpdate == true).FirstOrDefault() != null)
+    {
+        <a href="/MedicineCategories/Edit?id=@Model.MedicineCategoryId">Edit</a>
+    }
+    |
+    @Html.ActionLink("Back to List", "Index")
+</p>

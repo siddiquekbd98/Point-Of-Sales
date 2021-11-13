@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MedicineSalesModelStoreContainer" CdmEntityContainer="MedicineSalesEntities">
+    <EntitySetMapping Name="TblSalePoints">
+      <EntityTypeMapping TypeName="MedicineSalesModel.TblSalePoint">
+        <MappingFragment StoreEntitySet="TblSalePoint">
+          <ScalarProperty Name="SalePointID" ColumnName="SalePointID" />
+          <ScalarProperty Name="SalePointNo" ColumnName="SalePointNo" />
+          <ScalarProperty Name="SalePointName" ColumnName="SalePointName" />
+          <ScalarProperty Name="SalePointManager" ColumnName="SalePointManager" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUsers">
+      <EntityTypeMapping TypeName="MedicineSalesModel.TblUser">
+        <MappingFragment StoreEntitySet="TblUser">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="UserPass" ColumnName="UserPass" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUserRoles">
+      <EntityTypeMapping TypeName="MedicineSalesModel.TblUserRole">
+        <MappingFragment StoreEntitySet="TblUserRole">
+          <ScalarProperty Name="UserRoleID" ColumnName="UserRoleID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="IsCreate" ColumnName="IsCreate" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="IsUpdate" ColumnName="IsUpdate" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineSuppliers">
+      <EntityTypeMapping TypeName="MedicineSalesModel.MedicineSupplier">
+        <MappingFragment StoreEntitySet="MedicineSupplier">
+          <ScalarProperty Name="ManagerName" ColumnName="ManagerName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="MedicineSupplierName" ColumnName="MedicineSupplierName" />
+          <ScalarProperty Name="MedicineSupplierId" ColumnName="MedicineSupplierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="MedicineSalesModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medicines">
+      <EntityTypeMapping TypeName="MedicineSalesModel.Medicine">
+        <MappingFragment StoreEntitySet="Medicine">
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="MedicineCategoryId" ColumnName="MedicineCategoryId" />
+          <ScalarProperty Name="MedicineName" ColumnName="MedicineName" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblMedicineCategories">
+      <EntityTypeMapping TypeName="MedicineSalesModel.TblMedicineCategory">
+        <MappingFragment StoreEntitySet="TblMedicineCategory">
+          <ScalarProperty Name="MedicineCategoryName" ColumnName="MedicineCategoryName" />
+          <ScalarProperty Name="MedicineCategoryId" ColumnName="MedicineCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineStocks">
+      <EntityTypeMapping TypeName="MedicineSalesModel.MedicineStock">
+        <MappingFragment StoreEntitySet="MedicineStock">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SalePointID" ColumnName="SalePointID" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+          <ScalarProperty Name="MedicineStockId" ColumnName="MedicineStockId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicinePurchases">
+      <EntityTypeMapping TypeName="MedicineSalesModel.MedicinePurchase">
+        <MappingFragment StoreEntitySet="MedicinePurchase">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="MemoNo" ColumnName="MemoNo" />
+          <ScalarProperty Name="MedicineStockStatus" ColumnName="MedicineStockStatus" />
+          <ScalarProperty Name="GrandTotalPrice" ColumnName="GrandTotalPrice" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="SalePointID" ColumnName="SalePointID" />
+          <ScalarProperty Name="MedicineSupplierId" ColumnName="MedicineSupplierId" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+          <ScalarProperty Name="MedicinePurchaseId" ColumnName="MedicinePurchaseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MedicineSales">
+      <EntityTypeMapping TypeName="MedicineSalesModel.MedicineSale">
+        <MappingFragment StoreEntitySet="MedicineSale">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="MemoNo" ColumnName="MemoNo" />
+          <ScalarProperty Name="MedicineStockStatus" ColumnName="MedicineStockStatus" />
+          <ScalarProperty Name="NetTotalPrice" ColumnName="NetTotalPrice" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Vat" ColumnName="Vat" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="SalePointID" ColumnName="SalePointID" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+          <ScalarProperty Name="MedicineSaleId" ColumnName="MedicineSaleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

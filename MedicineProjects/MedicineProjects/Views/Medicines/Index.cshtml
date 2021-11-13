@@ -1,0 +1,110 @@
+﻿
+@model MedicineProjects.ViewModel.VmCategoryWiseMedicine
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@Html.ActionLink(" Excel", "Reports", new { ReportType = "Excel" }, new { @class = " btn btn-success fa fa-file-excel-o" }) |
+@Html.ActionLink(" PDF", "Reports", new { ReportType = "PDF" }, new { @class = " btn btn-success fa fa-file-pdf-o" }) |
+@Html.ActionLink(" Word", "Reports", new { ReportType = "Word" }, new { @class = " btn btn-success fa fa-file-word-o" }) |
+@Html.ActionLink(" Image", "Reports", new { ReportType = "Image" }, new { @class = " btn btn-success fa fa-picture-o" })
+<br />
+<br />*@
+
+<div class="row">
+    <div class="col-s pull-s">
+        <h4 style="font-weight:bold;">Category Brand</h4>
+        <p>
+            <a href="/Medicines/Create" class="btn btn-sm btn-primary fa fa-plus"> Create New</a>
+        </p>
+        <table border="1" class="table table-bordered table-hover table-striped table-responsive">
+            <tr style="font-size:16px">
+                <th>
+                    Category
+                </th>
+                @*<th>
+                        Avaiable Medicine
+                    </th>*@
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model.CategoryList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.categoryName)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>*@
+                    <td>
+                        <a href="/Medicines/Index?id=@item.categoryID" class="btn btn-sm btn-info fa fa-info"> Details</a> |
+                        <a href="/Medicines/EditMultiple?id=@item.categoryID" class="btn btn-sm btn-success fa fa-pencil"> Edit</a>
+                        <a href="/Medicines/DeleteMultiple?id=@item.categoryID" class="btn btn-sm btn-danger fa fa-trash-o" onclick="return confirm('Are you sure to delete this category with Medicines?')"> Delete</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <div class="col-s7 push-s">
+        <h4 style="font-weight:bold;">Medicines of @Model.categoryName</h4>
+        <p>
+            <a href="/Medicines/Create" class="btn btn-sm btn-primary fa fa-plus">Create New</a>
+        </p>
+        <table border="1" class="table table-bordered table-hover table-striped table-condensed">
+            <tr style="font-size:16px">
+                <th>
+                    Category
+                </th>
+                <th>
+                    Medicine
+                </th>
+                <th>
+                    Purchase Price
+                </th>
+                <th>
+                    Sales Price
+                </th>
+                <th>
+                    Status
+                </th>
+                @*<th>
+                        Quantity
+                    </th>*@
+            <th>
+                Medicine Photo
+            </th>
+                <th>Action</th>
+            </tr>
+
+            @foreach (var item in Model.MedicineList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.categoryName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MedicineName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SalePrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>*@
+                    <td>
+                        <img src="@item.ImagePath" style="height:150px" />
+                    </td>
+                    <td>
+                        <a href="/Medicines/Edit?id=@item.MedicineId" class="btn btn-sm btn-warning fa fa-pencil"> Edit</a> |
+                        <a href="/Medicines/Delete?id=@item.MedicineId" class="btn btn-sm btn-danger fa fa-trash-o" onclick="return confirm('Are you sure to delete this Medicine?')"> Delete</a>
+                    </td>
+
+                </tr>
+            }
+        </table>
+    </div>
+</div>

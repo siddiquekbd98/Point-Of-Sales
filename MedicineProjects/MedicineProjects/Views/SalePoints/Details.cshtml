@@ -1,0 +1,56 @@
+﻿@model MedicineProjects.Models.TblSalePoint
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listTblUserRole = (List<MedicineProjects.Models.TblUserRole>)Session["TblUserRoles"];
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TblSalePoint</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SalePointNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalePointNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalePointName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalePointName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalePointManager)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalePointManager)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if (listTblUserRole.Where(o => o.PageName == "SalePoints" && o.IsUpdate == true).FirstOrDefault() != null)
+    {
+        <a href="/Products/Edit?id=@Model.SalePointID">Edit</a>
+    }
+    |
+    @Html.ActionLink("Back to List", "Index")
+</p>

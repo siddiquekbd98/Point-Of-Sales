@@ -1,0 +1,211 @@
+﻿@model MedicineProjects.Models. MedicineSale
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Sale</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.MedicineId, "MedicineId", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("MedicineId", null, htmlAttributes: new { @class = "form-control", @onChange = "changeMedicine(this)" })
+            @Html.ValidationMessageFor(model => model.MedicineId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @*<div class="form-group">
+        <label class="control-label col-md-2">Stock Quantity</label>
+        <div class="col-md-8">
+            <input type="text" id="qty" class="form-control" readonly />
+        </div>
+    </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CustomerId, "CustomerId", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("CustomerId", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SalePointID, "SalePointID", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("SalePointID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SalePointID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SaleDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SaleDate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SaleDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ExpireDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ExpireDate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ExpireDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    @*<div class="form-group">
+        <label class="control-label col-md-2">Sale Price</label>
+        <div class="col-md-8">
+            <input type="text" id="salePrice" class="form-control" readonly />
+        </div>
+    </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Rate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Rate, new { htmlAttributes = new { @class = "form-control", @id = "price", onchange = "getTotal()" } })
+            @Html.ValidationMessageFor(model => model.Rate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control", @id = "qty", onchange = "getTotal()" } })
+            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TotalPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TotalPrice, new { htmlAttributes = new { @class = "form-control", @id = "total", onchange = "getTotal()" } })
+            @Html.ValidationMessageFor(model => model.TotalPrice, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Vat, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Vat, new { htmlAttributes = new { @class = "form-control", @id = "vat", onchange = "getTotal()" } })
+            @Html.ValidationMessageFor(model => model.Vat, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Discount, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Discount, new { htmlAttributes = new { @class = "form-control", @id = "discount", onchange = "getTotal()" } })
+            @Html.ValidationMessageFor(model => model.Discount, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NetTotalPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NetTotalPrice, new { htmlAttributes = new { @class = "form-control", @id = "NetTotal" } })
+            @Html.ValidationMessageFor(model => model.NetTotalPrice, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MedicineStockStatus, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MedicineStockStatus, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MedicineStockStatus, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.MemoNo, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MemoNo, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MemoNo, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Comments, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" onclick="return isMedicineAvailable();" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<script>
+    //function changeMedicine(ddlObject) {
+    //    //Selected value of dropdownlist
+    //    var selectedValue = ddlObject.value;
+    //    //Selected text of dropdownlist
+    //    //var selectedText = ddlObject.options[ddlObject.selectedIndex].innerHTML;
+    //    getStockByMedicineId(selectedValue)
+    //}
+
+    //function getStockByMedicineId(id) {
+    //    var xhr = new XMLHttpRequest();
+    //    xhr.onreadystatechange = function () {
+    //        if (xhr.readyState == XMLHttpRequest.DONE) {
+    //            var oStock = JSON.parse(xhr.responseText);
+    //            document.getElementById('qty').value = oStock.qty;
+    //            document.getElementById('salePrice').value = oStock.salePrice;
+    //        }
+    //    }
+    //    xhr.open('GET', '/Medicines/GetStockByMedicineId/' + id, true);
+    //    xhr.send(null);
+    //}
+
+    //function isMedicineAvailable() {
+    //    var isAvailable = true;
+    //    var stockQty = parseInt(document.getElementById('qty').value);
+    //    var saleQty = parseInt(document.getElementById('Quantity').value);
+    //    var salePrice = parseInt(document.getElementById('salePrice').value);
+    //    if (isNaN(stockQty) || isNaN(saleQty) || isNaN(salePrice)) {
+    //        isAvailable = false;
+    //        alert("Select a Medicine and input sale Quantity.");
+    //    } else if (saleQty > stockQty) {
+    //        isAvailable = false;
+    //        alert("Stock not available.");
+    //    }
+    //    return isAvailable;
+    //}
+
+    function getTotal() {
+
+        var price = document.getElementById("price").value;
+        var qty = document.getElementById("qty").value;
+        var total = price * qty;
+        document.getElementById("total").value = total;
+        var vat = document.getElementById("vat").value;
+        var nVat = (vat / 100);
+        var NetTotal = total * nVat;
+        var discount = document.getElementById("discount").value;
+        var NetTotal = (total + nVat) - discount;
+        document.getElementById("NetTotal").value = NetTotal;
+    }
+</script>

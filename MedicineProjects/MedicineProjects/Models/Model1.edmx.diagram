@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a6fc7ff43a104e63a2e8842ee6a6879e" Name="Diagram1">
+        <EntityTypeShape EntityType="MedicineSalesModel.TblSalePoint" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicineSalesModel.TblUser" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicineSalesModel.TblUserRole" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="MedicineSalesModel.FK_TblUserRole_TblUser" />
+        <EntityTypeShape EntityType="MedicineSalesModel.MedicineSupplier" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="MedicineSalesModel.Customer" Width="1.5" PointX="3" PointY="11.625" />
+        <EntityTypeShape EntityType="MedicineSalesModel.Medicine" Width="1.5" PointX="7.625" PointY="9.25" />
+        <EntityTypeShape EntityType="MedicineSalesModel.TblMedicineCategory" Width="1.5" PointX="5.375" PointY="10" />
+        <AssociationConnector Association="MedicineSalesModel.FK_Medicine_TblMedicineCategory" />
+        <EntityTypeShape EntityType="MedicineSalesModel.MedicineStock" Width="1.5" PointX="9.875" PointY="5.25" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicineStock_Medicine" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicineStock_TblSalePoint" />
+        <EntityTypeShape EntityType="MedicineSalesModel.MedicinePurchase" Width="1.5" PointX="12.875" PointY="3.375" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicinePurchase_Medicine" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicinePurchase_MedicineSupplier" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicinePurchase_TblSalePoint" />
+        <EntityTypeShape EntityType="MedicineSalesModel.MedicineSale" Width="1.5" PointX="9.875" PointY="9" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicineSale_Customer" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicineSale_Medicine" />
+        <AssociationConnector Association="MedicineSalesModel.FK_MedicineSale_TblSalePoint" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

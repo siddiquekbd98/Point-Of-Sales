@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MedicineProjects.Models.TblMedicineCategory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listTblUserRole = (List<MedicineProjects.Models.TblUserRole>)Session["TblUserRoles"];
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MedicineCategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.MedicineCategoryName)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MedicineCategoryId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MedicineCategoryId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MedicineCategoryId })
+    </td>
+    <td>
+
+        @if (listTblUserRole.Where(o => o.PageName == "MedicineCategories" && o.IsUpdate == true).FirstOrDefault() != null)
+        {
+            @Html.ActionLink("Edit", "Edit", new { id = item.MedicineCategoryId})
+        }
+        |
+        @if (listTblUserRole.Where(o => o.PageName == "MedicineCategories" && o.IsRead == true).FirstOrDefault() != null)
+        {
+            @Html.ActionLink("Details", "Details", new { id = item.MedicineCategoryId })
+        }
+        |
+        @if (listTblUserRole.Where(o => o.PageName == "MedicineCategories" && o.IsDelete == true).FirstOrDefault() != null)
+        {
+            @Html.ActionLink("Delete", "Delete", new { id = item.MedicineCategoryId })
+        }
+    </td>
+</tr>
+}
+
+</table>

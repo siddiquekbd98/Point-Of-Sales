@@ -1,0 +1,55 @@
+﻿@model MedicineProjects.ViewModel.VmMedicineCategory
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Create Medicines</h2>
+<div>
+    @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-primary" })
+</div>
+@using (Html.BeginForm("Create", "Medicines", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            Category:
+            <input list="Category" name="MedicineCategoryName" id="MedicineCategoryName" required autocomplete="off">
+            <datalist id="Category">
+                @foreach (var item in Model.CategoryList)
+                {
+                    <option value="@item.MedicineCategoryName" />
+                }
+            </datalist>
+        </div>
+        <div class="form-group">
+            <div id="ProData" class="Table">
+                <div id="RowData" class="Row">
+                    <input type="text" name="MedicineName" placeholder="MedicineName" />
+                    <input type="text" name="SalePrice" placeholder="SalePrice" />
+                    <input type="text" name="Status" placeholder="Status" />
+                    <input type="file" name="imgFile" placeholder="imgFile" />
+                    <a id="addRow" href="#" class="btn btn-xs btn-success"><i>+</i></a><hr />
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default">
+            </div>
+        </div>
+    </div>
+}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+
+    $('#addRow').on('click', function () {
+        $('#ProData').append('<div id="RowData" class="Row"><input type="text" name="MedicineName" placeholder="MedicineName" /><input type="text" name="SalePrice" placeholder="SalePrice" /><input type="text" name="Status" placeholder="Status" /><input type="file" name="imgFile" placeholder="imgFile" /><a id="deleteRow" href="#" class="btn btn-xs btn-danger"><i>-</i></a><hr /></div>');
+        $('#ProData').addClass();
+        return false;
+    });
+    $('#ProData').on('click', '#deleteRow', function () {
+        $(this).parent().remove();
+        return false;
+    });
+</script>

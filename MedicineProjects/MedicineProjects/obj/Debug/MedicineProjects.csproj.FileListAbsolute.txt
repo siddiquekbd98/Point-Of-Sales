@@ -1,0 +1,249 @@
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll.config
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\MedicineProjects.pdb
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe.config
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csc.rsp
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe.config
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\csi.rsp
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.AppContext.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Collections.Immutable.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Console.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Globalization.Calendars.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Http.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Sockets.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Reflection.Metadata.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.ValueTuple.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe.config
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\vbc.rsp
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe.config
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\EntityFramework.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Microsoft.Web.Infrastructure.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Razor.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\WebGrease.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\EntityFramework.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.Razor.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.pdb
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CoreCompileInputs.cache
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CopyComplete
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.dll
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.pdb
+E:\Users\Abu bakor\source\repos\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.AssemblyReference.cache
+G:\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll.config
+G:\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll
+G:\MedicineProjects\MedicineProjects\bin\MedicineProjects.pdb
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe.config
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csc.rsp
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe.config
+G:\MedicineProjects\MedicineProjects\bin\roslyn\csi.rsp
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Managed.Core.targets
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.AppContext.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Collections.Immutable.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Console.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Globalization.Calendars.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.ZipFile.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Http.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Sockets.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Reflection.Metadata.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.ValueTuple.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XmlDocument.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe
+G:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe.config
+G:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.rsp
+G:\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe
+G:\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe.config
+G:\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.dll
+G:\MedicineProjects\MedicineProjects\bin\EntityFramework.dll
+G:\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.dll
+G:\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\MedicineProjects\MedicineProjects\bin\Microsoft.Web.Infrastructure.dll
+G:\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Razor.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.dll
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.dll
+G:\MedicineProjects\MedicineProjects\bin\WebGrease.dll
+G:\MedicineProjects\MedicineProjects\bin\EntityFramework.xml
+G:\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.Razor.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.xml
+G:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.xml
+G:\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.xml
+G:\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.pdb
+G:\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.AssemblyReference.cache
+G:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CoreCompileInputs.cache
+G:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CopyComplete
+G:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.dll
+G:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.pdb
+F:\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll.config
+F:\MedicineProjects\MedicineProjects\bin\MedicineProjects.dll
+F:\MedicineProjects\MedicineProjects\bin\MedicineProjects.pdb
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csc.exe.config
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csc.rsp
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csi.exe.config
+F:\MedicineProjects\MedicineProjects\bin\roslyn\csi.rsp
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MedicineProjects\MedicineProjects\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.AppContext.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Collections.Immutable.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Console.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Globalization.Calendars.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Http.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Net.Sockets.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Reflection.Metadata.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.ValueTuple.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe
+F:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.exe.config
+F:\MedicineProjects\MedicineProjects\bin\roslyn\vbc.rsp
+F:\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe
+F:\MedicineProjects\MedicineProjects\bin\roslyn\VBCSCompiler.exe.config
+F:\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.dll
+F:\MedicineProjects\MedicineProjects\bin\EntityFramework.dll
+F:\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.dll
+F:\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MedicineProjects\MedicineProjects\bin\Microsoft.Web.Infrastructure.dll
+F:\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Razor.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.dll
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.dll
+F:\MedicineProjects\MedicineProjects\bin\WebGrease.dll
+F:\MedicineProjects\MedicineProjects\bin\EntityFramework.xml
+F:\MedicineProjects\MedicineProjects\bin\EntityFramework.SqlServer.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Helpers.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Mvc.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Optimization.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.Razor.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Deployment.xml
+F:\MedicineProjects\MedicineProjects\bin\System.Web.WebPages.Razor.xml
+F:\MedicineProjects\MedicineProjects\bin\Newtonsoft.Json.xml
+F:\MedicineProjects\MedicineProjects\bin\Antlr3.Runtime.pdb
+F:\MedicineProjects\MedicineProjects\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csprojAssemblyReference.cache
+F:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CoreCompileInputs.cache
+F:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.csproj.CopyComplete
+F:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.dll
+F:\MedicineProjects\MedicineProjects\obj\Debug\MedicineProjects.pdb
